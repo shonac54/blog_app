@@ -5,6 +5,7 @@ import AddBlog from './components/AddBlog';
 import ViewBlog from './components/ViewBlog';
 import ViewMyBlog from './components/ViewMyBlog';
 import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path='view' element={<ViewBlog/>}/>
       <Route path='viewmyblog' element={<ViewMyBlog/>}/>
       <Route path='login' element={<Login/>}/>
+      <Route path='register' element={<Register/>}/>
     </Routes>
     </BrowserRouter>
   );
