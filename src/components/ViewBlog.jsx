@@ -7,10 +7,12 @@ const ViewBlog = () => {
         axios.post("http://127.0.0.1:8000/blog/viewblog/").then(
             (response)=>{
                 changeData(response.data)
+                changeLoading(false)
             }
         )
     }
     const [isLoading, changeLoading] = useState(true)
+    
     useEffect(()=>{fetchData()},[])
 
   return (
