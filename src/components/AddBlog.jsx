@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import BlogHeader from './BlogHeader'
 
 const AddBlog = () => {
     const [inputField,changeINputField]=useState(
@@ -23,6 +24,7 @@ const AddBlog = () => {
     }
   return (
     <div>
+        <BlogHeader/>
         
         <div className="container">
             <div className="row">
